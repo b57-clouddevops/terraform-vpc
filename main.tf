@@ -1,3 +1,3 @@
 module "vpc" {
-  source = "git::https://github.com/b57-clouddevops/tf-module-vpc.git"
+  source = "./vendor/modules/vpc/"       # Terrafile clones the backend module mentioned in the Terrafile and keeps it local to the root 
 }
