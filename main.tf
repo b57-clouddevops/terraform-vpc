@@ -5,6 +5,7 @@ module "vpc" {
     PRIVATE_SUBNET_CIDR = var.PRIVATE_SUBNET_CIDR
     ENV                 = var.ENV
     AZ                  = var.AZ
+    DEFAULT_VPC_CIDR    = var.DEFAULT_VPC_CIDR
 }
 
 # We cannot parametrize anything that's added n the source.
