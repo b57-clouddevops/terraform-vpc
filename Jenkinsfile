@@ -19,3 +19,4 @@ pipeline {
         }
     }
 }
+gp ; terrafile -f env-dev/Terrafile ; terraform init --backend-config=env-dev/dev-backend.tfvars  ; terraform plan --var-file=dev/dev.tfvars ; terraform apply --var-file=env-dev/dev.tfvars  -auto-approve
